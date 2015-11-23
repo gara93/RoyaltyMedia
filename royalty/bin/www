@@ -9,6 +9,14 @@ var debug = require('debug')('royalty:server');
 var http = require('http');
 // /bin/www.js
 
+var MongoClient = require('mongodb').MongoClient;
+var mongourl="mongodb://localhost:27017/royalty";
+
+MongoClient.connect(mongourl,function(err,db){
+  if (err) {onError(err);
+
+  }
+  var app=require('../app')(db);
 
 /**
  * Get port from environment and store in Express.
@@ -90,3 +98,4 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+});
