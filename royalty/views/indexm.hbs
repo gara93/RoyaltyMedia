@@ -1,0 +1,78 @@
+<head>
+    <title>Page Title</title>
+    	<meta charset="utf-8">
+      <script>console.log("llamar a ajax");</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+
+<script src="javascripts/jquery-2.1.4.min.js" ></script>
+<script src="javascripts/jquery.mobile-1.4.5.js" ></script>
+
+</head>
+//**********************************************************************
+<body>
+//***************************************************
+<div data-role="page" id="menu">
+  <div align=right>
+  <a href="/removeSesion">Cerrar Sesion</a>
+  </div>
+<div data-role="header" data-theme="b" >
+    <h1>Bienvenido + {{session.usuarioNombre}}</h1>
+</div>
+<div data-role="content" data-theme="b">
+    <a href="#perfil" data-role="button" data-icon="shop" data-iconpos="bottom" >Ver Catalogo</a>
+      <a href="#historial" data-role="button" data-icon="info" data-iconpos="bottom" >Ver Compras Realizadas</a>
+        <a href="#contactanos" data-role="button" data-icon="mail" data-iconpos="bottom"  >Contactanos</a>
+</div>
+
+
+<div data-role="footer" data-position="fixed" data-theme="b">
+    <h2>Royalty Media</h2>
+
+</div>
+</div>
+//******************************************************
+
+<div data-role="page" id="perfil">
+<div data-role="header" data-theme="b">
+    <h1>Producto de Compra</h1>
+</div>
+<style>
+  #insertar{
+    color: black;
+  }
+</style>
+<div data-role="content" data-theme="b"  >
+<center>  <ul data-theme="a" data-role="listview" id="librosList" >
+
+</ul></center>
+
+<a href="#menu" data-role="button" data-icon="home"data-position="fixed" >Pagina Principal</a>
+</div>
+
+<div data-role="footer" data-position="fixed" data-theme="b">
+    <h2>Royalty Media</h2>
+</div>
+</div>
+//**************************************************
+
+<div data-role="page" id="historial">
+<div data-role="header" data-theme="b">
+    <h1>Royalty Media</h1>
+</div>
+<div data-role="content" data-theme="b">
+     <p>Bienvenido a la Pagina 3</p>
+     <a href="#menu" data-role="button" data-icon="home"  >Pagina Principal</a>
+</div>
+
+<div data-role="footer" data-position="fixed" data-theme="b">
+    <h2>2015</h2>
+</div>
+</div>
+
+
+
+<script src="javascripts/productos.js">console.log("llam");</script>
+
+</body>
