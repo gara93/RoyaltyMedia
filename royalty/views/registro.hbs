@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Page</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="javascripts/validaciones.js"></script>
+
+</head>
+
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<a href="" data-rel="back">Home</a>
+		<h1>Register Page</h1>
+	</div>
+
+	<div data-role="content">
+
+
+		<form method = "post" action="/api/registroUsuario">
+
+
+      		<fieldset data-role="fieldcontain">
+      		<label for="name">Nombre:</label>
+      		<input type="text" name="txtnombre" id="txtnombre" class="nombre"  value="{{txtnombre}}">
+      	</fieldset>
+
+        			<fieldset data-role="fieldcontain">
+        				<label for="apellid">Apellido:</label>
+        				<input type="text" name="txtapellido" id="txtapellido"class="apellido" value="{{txtapellido}}">
+        			</fieldset>
+
+              			<fieldset data-role="fieldcontain">
+              				<label for="email">Correo:</label>
+              				<input type="text" name="txtcorreo" id="txtcorreo" class="correo" value="{{txtcorreo}}">
+              			</fieldset>
+
+                    <fieldset data-role="fieldcontain">
+                      <label for="user">Usuario:</label>
+                      <input type="text" name="txtuser" id="txtuser" class="usuario" value="{{txtuser}}">
+                    </fieldset>
+
+
+
+			<fieldset data-role="fieldcontain">
+				<label for="password">Password:</label>
+				<input type="password" name="txtPass" id="txtpass" class="contra" value="{{txtPass}}">
+			</fieldset>
+
+
+
+
+<input type="submit" class="boton"  value="Register" onclick="validaciones">
+		</form>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+			<h1>Royalty Media</h1>
+	</div>
+
+
+</div>
+
+
+</body>
+</html>
