@@ -85,6 +85,24 @@ function apiGeneral(db){
       }
   })
 })//Insertar Carrito
+ apirouter.post("/Contactanos",function(req,res){
+              var doc = {
+
+                  Descripcion:req.body.description,
+                  Correo:req.body.owner,
+
+              };
+              console.log(doc);
+              Comentario.insertOne(doc, function(err,result){
+                  if(err){
+                      res.status(500).json({error:err});
+                  }else{
+                      res.status(200).json({resultado:result});
+                  }
+              });
+          });
+
+//contactanos 
 
 
   return apirouter;
