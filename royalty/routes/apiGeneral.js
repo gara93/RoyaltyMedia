@@ -5,6 +5,11 @@ var apirouter = express.Router();
 function apiGeneral(db){
   var sesion="";
   var usuario = db.collection("usuario");
+ var producto = db.collection("producto");
+  var CarritoCompra = db.collection("CarritoCompra");
+
+  var Comentario = db.collection("Comentario");
+
 
 
 
