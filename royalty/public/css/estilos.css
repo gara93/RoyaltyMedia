@@ -1,0 +1,278 @@
+body{
+    font-family: arial cursive , Verdana, Tahoma;
+    font-size: 12px;
+    width: 64em;
+    background-color: #DDD;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.header{
+    float: left;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.usuario{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align:right;
+
+}
+
+.footer{
+
+  //position: relative;
+  width: 64em;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.logo{
+    width: 10em;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.sesion{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-align:right;
+}
+
+
+nav{
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav >ul
+{
+    display:table;
+    width: 50em;
+    /**background: #D3D3D3;**/
+    position: relative;
+}
+
+nav >ul li
+{
+ display:table-cell;
+}
+
+nav > ul li a{
+    font-size: 1.3em;
+    color: #000;
+    display: block;
+    line-height: 20px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+   /** box-shadow: 0.20em 0 0 0 #86008F;**/
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+
+nav>ul>li>ul a:hover{
+    background: #5da5a2;
+
+}
+
+nav > ul > li a span
+{
+    background: rgba(254,46,247,0.07);
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top:-40px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > a:hover > span
+{
+    top: 0;
+}
+
+.todo .container{
+
+
+}
+#slider > div img
+{
+    width: 64.8em;
+    height: 29.8em;
+    margin: 0;
+}
+
+#slider > div
+{
+    position: absolute;
+    width: 65em;
+    height: 30em;
+}
+
+.contenido{
+    padding: 1em;
+    width: 62.8em;
+    height: 6em;
+    margin: 22em 0 0 0;
+    position: absolute;
+    background-color:rgba(190,190,190,0.40);
+    word-break: break-all;
+}
+.contenido h1{
+    font-size: 3em;
+}
+.contenido h2{
+    font-size: 2.5em;
+}
+
+
+.container2{
+    margin: 33em 0 0 0;
+    padding: 0;
+    position: absolute;
+    width: 62.8em;
+    height:9em;
+    padding: 0;
+    border: solid 0.0625em  #999;
+    background-color:rgba(254,46,247,0.07);
+    box-shadow: 0em 0.125em 0.125em 0.125em #610B5E;
+    word-break: break-all;
+}
+
+.container2 h1{
+    margin: 0.29em 0 0 0.29em;
+}
+.container2 h3{
+    margin: 0.29em 0 0 0.60em;
+    padding: 0;
+}
+.container2 img{
+    position: relative;
+    top: -2em;
+    left: 6em;
+    padding: 0em;
+    height: 13.350308642em;
+    width: 20.5em;
+    margin: 0em 0 30em 0;
+    float: right;
+}
+
+
+
+.container3{
+    position: absolute;
+    width: 11.953125em;
+    height: 15em;
+    border: solid 0.0625em  #999;
+    margin: 45em 0 0  3em;
+    background-color:rgba(254,46,247,0.07);
+    box-shadow: 0em 0.125em 0.125em 0.125em #610B5E;
+    word-break: break-all;
+}
+
+
+.container3 img{
+    width: 15.25em;
+    height: 12.886880165em;
+    top: 4em;
+    position: absolute;
+    left: 0em;
+    padding: 1em;
+    float: left;
+    }
+.container4{
+
+    position: absolute;
+    padding: 0.5em;
+    width: 15.25em;
+    height: 14em;
+    border: solid 0.0625em  #999;
+    margin: 45em 0 0  19.7em;
+    background-color:rgba(254,46,247,0.07);
+    box-shadow: 0em 0.125em 0.125em 0.125em #610B5E;
+     word-break: break-all;
+}
+
+.container h2{
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0;
+}
+.container4 img{
+    padding: 0.5em 0.5em 0.25em 0;
+    height: 9em;
+    width: 15.033175355em;
+    margin: 0 ;
+    float: left;
+}
+
+.container5{
+
+    position: absolute;
+    padding: 1em;
+    width: 15.25em;
+    height: 14em;
+    border: solid 0.0625em  #999;
+    margin: 45em 0 0  43em;
+    background-color:rgba(254,46,247,0.07);
+    box-shadow: 0em 0.125em 0.125em 0.125em #610B5E;
+    word-break: break-all;
+}
+
+.container5 img{
+    padding: 1em;
+    height: 9em;
+    width: 15.033175355em;
+    margin: 0;
+    float: left;
+
+}
+.container1 {
+  position: absolute;
+  height: 8em;
+  text-align: center;
+}
+
+
+.error{
+    background-color: #BC1010;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+}
+.error:before{ /* Este es un truco para crear una flechita */
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
