@@ -1,0 +1,62 @@
+<style>
+.google-maps {
+position: relative;
+padding-bottom: 75%; // This is the aspect ratio
+height: 0;
+overflow: hidden;
+}
+.google-maps iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
+</style>
+
+<div class="google-maps">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7739.731273479932!2d-87.23378371592393!3d14.085107944358354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2shn!4v1448781155619" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div data-role="page" id="contactanos">
+	<div data-role="header" data-theme="a" data-position="fixed">
+        <div class="ui-grid-b">
+        <div class="ui-block-c" style="width:25%">&nbsp;</div>
+        </div><!-- /grid-b -->
+	</div><!-- /header -->
+	<div data-role="content" data-theme="a">
+      <h1>Royalty Media</h1>
+        <p class="normal">Si despu&eacute;s de ver esta web, tienes alg&uacute;n comentario constructivo, quieres que te env&iacute;e mi CV o crees que podr&iacute;a  colaborar con el proyecto que t&uacute; o tu empresa desea llevar a cabo no dudes en rellenar el siguiente <strong>formulario de contacto</strong>.</p>
+        <div id="nombre_error" data-role="popup" data-theme="e" data-overlay-theme="a" class="ui-content popups">
+	<div data-role="page" id="newbacklog">
+	    <div data-role="header" data-position="fixed">
+
+	    </div>
+	    <div role="main" class="ui-content">
+	        <form method = "post" action="/api/Contactanos">
+						<div data-role="fieldcontain">
+						 <label for="nombre">Nombre</label>
+						 <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellidos" />
+						 </div>
+<label for="description">Comentario</label>
+					    <div class="ui-field-contain">
+	                <textarea rows=8 cols=40 name="description"
+	                id="description" placeholder="Story"></textarea>
+	                <br/>
+	                <label for="owner">Email</label>
+	                <input type="email" name="owner" id="owner"
+	                    placeholder="email" />
+	                <br/>
+	                <button id="btnNewStory">Enviar</button>
+	            </div>
+	        </form>
+
+	</div>
+
+	<div data-role="footer" data-theme="a" data-position="fixed">
+        <div class="ui-grid-a">
+            <div class="ui-block-a" align="center" style="width:85%"><h5>&copy; 2015 Royalty Media</h5></div>
+            <div class="ui-block-b" align="right" style="width:15%"><a href="http://royaltymedia.com" data-role="button" data-icon="pagweb" data-iconpos="notext" target="_blank">Pagina Web</a></div>
+        </div><!-- /grid-a -->
+	</div><!-- /footer -->
+</div><!-- /page -->
